@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(209, 4, 4);
+    background-image: url(background2.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height: auto;
+}
+    
+   
+    article {
+    font-family: Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+    color: #333;
+    font-size: 1.1em;
+}
+    
+    /* Overlay Image */
+    article::before {
+    content: "";
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; 
+    z-index: -1; 
+    }
+    
+/* Headings within the article */
+h1{
+    color: rgb(209, 4, 4);
+    text-align: center;
+    font-size: 2em;
+}
+   
+
+   header {
+    font-family: Arial, sans-serif;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 900px;
+    height:200px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+header img {
+    width: 150px;
+    display: block;
+    margin: 0 auto 15px;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+}
+
+
+header a {
+    color: rgb(209, 4, 4);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header ul li{
+    display: inline;
+    margin-right: 20px;
+    font-size: 1.2em;
+}
+
+header a:hover{
+    color: rgb(209, 4, 4);
+    border-bottom: 2px solid rgb(209, 4, 4);
+ }
+
+ .dropdown_menu{
+    display:none
+}
+
+.dropdown_menu2{
+    display:none
+}
+
+.menu-container ul li:hover .dropdown_menu2{
+    display:block;
+    margin-bottom: 8px;
+    position:absolute;
+    
+    
+  
+}
+
+.menu-container ul li:hover .dropdown_menu{
+    display:block;
+    margin-left:0px;
+    margin-bottom: 8px;
+    position:absolute;
+   
+}
+
+.dropdown_menu2.second {
+    top: 95%; 
+    left: 407px;
+    font-size: 1.1em;
+    color: rgb(209, 4, 4);
+}
+    
+    /* Paragraph Styling */
+    article p {
+    margin: 10px 0;
+    }
+    
+    /* Links within the article */
+    article a {
+    color: #007acc;
+    text-decoration: none;
+    border-bottom: 1px solid #007acc;
+    transition: color 0.3s, border-bottom-color 0.3s;
+    }
+    
+    article a:hover {
+    color: rgb(209, 4, 4);
+    border-bottom-color: rgb(209, 4, 4);
+    }
+    
+    /* Image Styling within the Article */
+    article img {
+    max-width: 100%;
+    height: auto;
+   
+    border-radius: 5px;
+    margin: 10px 0;
+    }
+    
+    /* Lists within the Article */
+    article ul, article ol {
+    padding-left: 20px;
+    margin: 10px 0;
+    }
+    
+    article li {
+    margin: 5px 0;
+    }
+    
+/* Footer Styling */
+footer {
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    background-color:rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
+    color: black;
+} 
+
+footer a{
+    color: rgb(209, 4, 4)
+}
+
+footer a img{
+    width: 50px;
+    margin-top: 10px;
+ }
+ footer p{
+    margin: 10px 0;
+ }
+
+ .pictures{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+ }
+    
+    .camron img{
+        height:150px;
+        border-style: solid;
+        border-color: black;
+    }
+
+    .Ana > img{
+        height:150px;
+        margin-top:15px;
+        border-style: solid;
+        border-color: black;
+    }
+    .Riley > img{
+        height:150px;
+        margin-top: 50px;
+        border-style: solid;
+        border-color: black;
+    }
+    
+    .Riley_text{
+        margin-left: 25px;
+    }
+    .Camron_text{
+        margin-left: 25px;
+    }
+    .Ana_text{
+        margin-left: 25px;
+    }
+    .pictures img{
+        border-radius: 15%;
+    }

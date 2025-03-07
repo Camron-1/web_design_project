@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Animal</title>
+</head>
+<body>
+
+    <h2>Verify Your Animal</h2>
+    
+    <form action="view.php" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="first_name">First Name:</label>
+        <input type="text" name="fname" id="first_name" required>
+
+        <label for="animal_id">Animal ID:</label>
+        <input type="text" name="animal_id" id="animal_id" required>
+
+        <button type="submit">Verify</button>
+    </form>
+
+    <div id="map"></div>
+    
+    <script>
+        function initMap() {
+            // Define map center
+            var center = { lat: 37.7749, lng: -122.4194 }; // San Francisco
+            
+            // Create the map
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: center
+            });
+            
+            // List of locations
+            var locations = [
+                { lat: 37.7749, lng: -122.4194, title: "San Francisco" },
+                { lat: 34.0522, lng: -118.2437, title: "Los Angeles" },
+                { lat: 40.7128, lng: -74.0060, title: "New York" },
+                { lat: 41.8781, lng: -87.6298, title: "Chicago" }
+            ];
+            
+            // Drop markers
+            locations.forEach(function(location) {
+                new google.maps.Marker({
+                    position: { lat: location.lat, lng: location.lng },
+                    map: map,
+                    title: location.title
+                });
+            });
+        }
+    </script>
+</body>
+</html>
